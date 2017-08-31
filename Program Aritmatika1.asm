@@ -1,0 +1,12 @@
+	LD B,08H
+	LD D,04H
+	LD A,B
+	ADD A,D
+	LD L,A
+	LD A,01H
+	ADC A,01H
+	LD H,A
+	LD (1920),HL
+	HALT
+	.END	
+	
